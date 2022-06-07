@@ -50,10 +50,14 @@
             // this could be replace with loading from database
             var a = new Product('A', 2);
             a.Promotion = new Promotion(4, 7);
+            inventory.Add('A', a);
             var b = new Product('B', 12);
+            inventory.Add('B', b);
             var c = new Product('C', 1.25m);
             c.Promotion = new Promotion(6, 6);
+            inventory.Add('C', c);
             var d = new Product('D', 0.15m);
+            inventory.Add('D', d);
         }
     }
 }
