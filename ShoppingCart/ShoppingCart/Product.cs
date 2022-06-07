@@ -15,7 +15,7 @@ namespace ShoppingCart
         }
         public char Name { get; set; }
         public decimal Price { get; set; }
-        public Promotion Promotion { get; set; }
+        public Promotion? Promotion { get; set; }
         public decimal Total(int units)
         {
             if (Promotion != null)

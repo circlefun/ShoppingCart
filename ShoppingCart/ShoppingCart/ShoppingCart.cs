@@ -47,7 +47,7 @@
 
         private void LoadInventory()
         {
-            // this could be replace with loading from database
+            // this could be replaced with loading from database
             var a = new Product('A', 2);
             a.Promotion = new Promotion(4, 7);
             inventory.Add('A', a);

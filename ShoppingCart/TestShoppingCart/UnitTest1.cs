@@ -25,5 +25,12 @@ namespace ShoppingCart.TestShoppingCart
             cart.Scan("ABCD");
             Assert.Equal(15.4m, cart.Total());
         }
+        [Fact]
+        public void Test4()
+        {
+            var cart = new ShoppingCart();
+            cart.Scan("ABCDCCBACACACDCA");
+            Assert.Equal(40.55m, cart.Total());
+        }
     }
 }
